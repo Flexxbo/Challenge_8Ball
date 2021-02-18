@@ -23,6 +23,15 @@ class _EightBallState extends State<EightBall> {
     return MaterialApp(
       title: 'Felix´ Eightball',
       home: Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Text(
+              'Felix´ EightBall',
+              style: TextStyle(color: Colors.amber[300]),
+            ),
+          ),
+          backgroundColor: Colors.deepOrange[900],
+        ),
         backgroundColor: Colors.deepOrange,
         body: SafeArea(
           child: Container(
@@ -38,24 +47,3 @@ class _EightBallState extends State<EightBall> {
     );
   }
 }
-/*
-class EightBall extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Felix´ Eightball',
-      home: Scaffold(
-        backgroundColor: Colors.deepOrange,
-        body: SafeArea(
-          child: Container(
-            child: Center(
-              child: FlatButton(
-                  onPressed: () => {print("aujwef")},
-                  child: Image.asset("images/ball1.png")),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}*/
